@@ -1,30 +1,11 @@
-# React + TypeScript + Vite
+#TodoList
+GDSC 과제를 통해 만들어본 TodoList에 디자인과 기능을 추가해 만든 버전입니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+추가된 기능은 다음과 같습니다.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. 공백 입력방지 공백을 입력하고 ADD NEW를 누를 경우 등록할 일정을 입력해주세요. 라는 알림창이 나옵니다.
+2. 입력 값의 앞뒤 불필요한 공백을 trim함수를 사용하여 제거하고 기존에 등록된 일정인지 확인 후 이미 있는 일정이라면 이미 등록된 일정입니다. 라는 알림창이 나옵니다.
+3. 오늘의 년도 월 일 요일 부분을 추가했습니다.
+4. 체크박스 디자인을 수정해보았습니다.
+5. 체크가 되었을 때 중간에 줄이 그어지고 그 줄 색상 역시 변경했습니다.
+6. 0 TASKS: 일정이 등록되면 몇 개의 일정인지 확인해주며 체크 또는 삭제가 될 경우 그것을 제외한 일정의 수를 알려주도록 추가했습니다.
