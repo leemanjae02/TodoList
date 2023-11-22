@@ -1,4 +1,4 @@
-#TodoList
+📝 TodoList
 GDSC 과제를 통해 만들어본 TodoList에 디자인과 기능을 추가해 만든 버전입니다.
 
 추가된 기능은 다음과 같습니다.
