@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.Container {
+  width: 400px;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 16px rgb(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 55px;
+  font-size: 25px;
+  width: 100%;
+  border-bottom: 2px solid rgba(242, 242, 242);
+  color: rgba(102, 140, 255);
+  margin-bottom: 5px;
+}
+.Date {
+  font-size: 15px;
+}
+
+.input {
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  padding-left: 30px;
+}
+
+.TodoList {
+  width: 100%;
+  display: flex;
+  padding: 0px 30px;
+  flex-direction: column;
+}
+
+.TodoList div {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.TodoList span {
+  text-align: left;
+  margin-left: 15px;
+  color: rgba(102, 140, 255);
+}
+
+label {
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + label {
+  border: 1px solid black;
+  background-color: rgba(102, 140, 255);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.ischeck {
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
+
+button.Remove {
+  width: 25px;
+  height: 20px;
+  float: right;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: auto;
+  color: rgba(255, 128, 128);
+}
+
+button {
+  width: 80px;
+  height: 20px;
+  color: rgba(102, 140, 255);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  border-top: 2px solid rgba(242, 242, 242);
+}
+
+.bottom .add-btn {
+  padding-right: 12px;
+}
+.bottom .leavings-todo {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  width: 80px;
+  height: 20px;
+  color: rgba(102, 140, 255);
+  font-size: 14px;
+}
